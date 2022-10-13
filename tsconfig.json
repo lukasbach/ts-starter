@@ -5,7 +5,8 @@
     "strictNullChecks": true,
     "esModuleInterop": true,
     "module": "CommonJS",
-    "target": "ES6"
+    "target": "ES6",
+    "moduleResolution": "Node"
   },
   "include": ["src"]
 }
