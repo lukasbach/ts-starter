@@ -4,8 +4,10 @@
 
 > A template repository for CLI tools based on Typescript and CommanderJs.
 
+<!--
 ![Pretty](https://github.com/lukasbach/{NAME}/workflows/verify/badge.svg)
 ![Testing](https://github.com/lukasbach/{NAME}/workflows/publish/badge.svg)
+-->
 
  Features
 
@@ -19,6 +21,7 @@
 
 - Clone the template via the _Use this template_ button or by clicking
   [here](https://github.com/lukasbach/ts-starter/generate).
+- Search for "TODO" in the project and adjust everything applicable, and replace "{NAME}" with your project name
 - (optionally) Add a secret to GitHub with the name `npm_token` to allow NPM releases
 - (optionally) enable packaging an exported CLI via `pkg` if enabled in the CI file
 - remove or adapt from the following sections to adjust to the package
