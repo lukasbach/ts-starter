@@ -1,5 +1,13 @@
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+node_modules
+
 lib
 exec
 .idea
-node_modules
 yarn-error.log
