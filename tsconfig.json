@@ -8,5 +8,6 @@
     "target": "ES6",
     "moduleResolution": "Node"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["src/**/template-*"]
 }

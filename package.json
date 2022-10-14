@@ -1,5 +1,5 @@
 {
-  "name": "{NAME}",
+  "name": "TODO-package-name",
   "version": "0.0.1",
   "description": "TODO",
   "bin": "TODO lib/cjs/index.js",
@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@types/jest": "^29.1.2",
+    "@types/node": "^18.8.5",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
     "eslint": "^8.25.0",
