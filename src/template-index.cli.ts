@@ -1,5 +1,10 @@
 #!/usr/bin/env node
-// TODO run `yarn add commander`
+
+/*
+ * TODO run `yarn add commander` and `yarn add esbuild esbuild-runner --dev`
+ *  and add `"start": "esr src/index.ts"` to package.json:scripts
+ */
+
 // eslint-disable-next-line import/no-unresolved
 import { program } from "commander";
 import * as fs from "fs";
@@ -10,8 +15,15 @@ interface Options {
   pizzaType: string;
 }
 
+let cliVersion: string;
+try {
+  cliVersion = JSON.parse(fs.readFileSync(path.join(__dirname, "../package.json"), { encoding: "utf-8" })).version;
+} catch (e) {
+  cliVersion = "unknown";
+}
+
 program
-  .version(JSON.parse(fs.readFileSync(path.join(__dirname, "../package.json"), { encoding: "utf-8" })).version)
+  .version(cliVersion)
   .option("-s, --small", "small pizza size")
   .requiredOption("-p, --pizza-type <type>", "flavour of pizza");
 

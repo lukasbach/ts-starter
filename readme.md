@@ -4,11 +4,6 @@
 
 > A template repository for CLI tools based on Typescript and CommanderJs.
 
-<!--
-![Pretty](https://github.com/lukasbach/{NAME}/workflows/verify/badge.svg)
-![Testing](https://github.com/lukasbach/{NAME}/workflows/publish/badge.svg)
--->
-
  Features
 
 - Test setup with Jest
@@ -37,8 +32,6 @@ Install globally via
 or directly use via
 
     npx {NAME}
-
-TODO You can also [download a prebuilt binary](https://github.com/lukasbach/{NAME}/releases) and run that.
 
 Usage:
 
@@ -80,4 +73,4 @@ render(
 - `yarn lint` to test and fix linter errors
 
 To publish a new version, the publish pipeline can be manually
-invoked.
+invoked, or run `yarn publish`.
